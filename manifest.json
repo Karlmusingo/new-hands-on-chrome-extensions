@@ -8,11 +8,13 @@
         "scripts": ["js/script.js"],
         "persistent": true
     },
-    "chrome_url_overrides" : { 
-        "newtab": "popup.html"
-    },
     "browser_action": {
         "default_popup": "popup.html",
         "default_title": "Web Time"
+    },
+    "icons": {
+        "16": "img/web-time-icon.png",
+        "48": "img/web-time-icon.png",
+        "128": "img/web-time-logo.png" 
     }
   }

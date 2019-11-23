@@ -6,12 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+<style>
+    body {
+        width: 245px;
+        padding: 1.3em;
+        padding-top: 0;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    h3 {
+        color: red;
+        text-align: center;
+        font-size: 1.2em;
+        margin: 15px 0;
+    }
+    .contend {
+        color: blue;
+    }
+    thead {
+        font-weight: bolder;
+        font-size: 1.1em;
+    }
+    td {
+        max-width: 150px;
+    }
+    tr {
+        cursor: default;
+    }
+    tr:hover {
+        background-color: #dddddd; 
+    }
+    h4 {
+        margin: 8px 0;
+    }
+    .percentage {
+        text-align: center;
+    }
+    span {
+        color: #5f5a5a;
+        font-weight: lighter;
+        font-size: 0.739em;
+    }
+    hr {
+        margin: 5px 0;
+        color: #8d8d8d;
+    }
+</style>
 <body>
-    <h3>Hello Web time !</h3>
+    <h3>Web Time !</h3>
+    <span>Most 10 places you spend your web time on 🤔🤔</span>
+    <hr />
+    <div class="content" id="myId">
+        <table id="content-table">
+            <thead>
+                <td><h4>Host</h4></td>
+                <td><h4>Percentage</h4></td>
+            </thead>
+        </table>
+    </div>
 </body>
-<script>
-    chrome.storage.sync.get('hosts', ({ hosts }) => {
-        console.log('hosts');
-    });
-</script>
+<script src="popup.js"></script>
 </html>
